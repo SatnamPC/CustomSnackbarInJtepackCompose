@@ -1,7 +1,9 @@
 # How to show a toast message on all screens using snackbar in Jetpack Compose.
 ![1754555165985732](https://github.com/user-attachments/assets/a9240f96-66e9-47bd-a2d6-615c72f6b4be)
 
-# Custom Snackbar Component
+# Steps to implement custom snackbar from Main Activity
+
+## Custom Snackbar Component
 ```
 /**
  * This component is used to show custom toast
@@ -39,7 +41,7 @@ fun ComponentCustomSnackBar(@DrawableRes icon: Int, message: String) {
 }
 ```
 
-# Inside the scaffold in the main activity
+## Inside the scaffold in the main activity
 
 ```
  val snackBarState = remember { SnackbarHostState() }
@@ -70,7 +72,7 @@ Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                 }
 ```
 
-# Inside Nav Graph 
+## Inside Nav Graph 
 Inside the Nav Graph, we have to pass the showCustomSnackBar function as a parameter because it works from bottom to top flow.
 
 ```
